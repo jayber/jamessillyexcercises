@@ -2,7 +2,6 @@
  * Get the tests to pass by changing what they expect
  */
 
-
 function myFunction() {
     return "ran myFunction";
 }
@@ -29,10 +28,10 @@ test("anotherArrowFunction", () => {expect(anotherArrowFunction("arg 1")).toEqua
 
 //now mess things up!
 let spare = myFunction;
-let myFunction = secondFunction;
+myFunction = secondFunction;
 secondFunction = arrowFunction;
 arrowFunction = anotherArrowFunction;
-anotherArrowFunction = spare;
+anotherArrowFunction = spare; 
 
 test("myFunction", () => {expect(myFunction()).toEqual("")});
 test("firstFunction", () => {expect(firstFunction()).toEqual("")});
