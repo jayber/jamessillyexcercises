@@ -4,10 +4,6 @@
  * its initial letters, separated by a comma.
  * Eventually the test here should pass, but you should
  * write your own tests on the way
- * So:
- * ["Karla Grajales", "Karleen Richards", "Khadija Haji", "Gayle Ngozi", "James Bromley"]
- * becomes
- * "KG, KR, KH, GN, JB"
  */
 
 
