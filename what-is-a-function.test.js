@@ -1,5 +1,6 @@
 /**
  * Get the tests to pass by changing what they expect
+ * NOT what the functions do
  */
 
 function myFunction() {
