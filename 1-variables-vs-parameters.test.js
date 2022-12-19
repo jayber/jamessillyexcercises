@@ -12,9 +12,6 @@ let dog = "Burt The Dog";
 let cat = "Alfred The Cat"
 
 function petNames(dog, cat) {
-  console.log("first")
-  console.log("second")
-
   return `my dog is called ${dog} and my cat is called ${cat}`
 }
 
