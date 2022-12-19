@@ -1,6 +1,7 @@
 /**
  * Get the tests to pass by changing what they expect
- * NOT what the functions do
+ * NOT what the functions do, by looking at the functions
+ * (NOT just looking at the errors and copying and pasting!!)
  */
 
 //dont't change these
