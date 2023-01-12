@@ -5,34 +5,34 @@
  * (NOT just looking at the errors and copying and pasting!!)
  */
 
-//dont't change these
+//don't change these
 function myFunction() {
-    return "ran myFunction";
+    return "run myFunction";
 }
 
 let firstFunction = myFunction
-
+// console.log({firstFunction})
 let secondFunction = function() {
-    return "ran secondFunction"
+    return "run secondFunction"
 }
 
 let arrowFunction = () => {
-    return "ran arrow function";
+    return "run arrow function";
 }
 
 let anotherArrowFunction = x => {
-    return "ran another arrow function with parameter value: " + x;
+    return "run another arrow function with parameter value: " + x;
 }
-
+/*
 //fill in the correct string argument passed to toEquals()
-test("myFunction", () => {expect(myFunction()).toEqual("")});
-test("firstFunction", () => {expect(firstFunction()).toEqual("")});
-test("secondFunction", () => {expect(secondFunction()).toEqual("")});
-test("arrowFunction", () => {expect(arrowFunction()).toEqual("")});
-test("anotherArrowFunction", () => {expect(anotherArrowFunction("arg 1")).toEqual("")});
-
-/* Once you have those working, uncomment this section and get the second
-set of tests to run
+test("myFunction", () => {expect(myFunction()).toEqual("run myFunction")});
+test("firstFunction", () => {expect(firstFunction()).toEqual("run myFunction")});
+test("secondFunction", () => {expect(secondFunction()).toEqual("run secondFunction")});
+test("arrowFunction", () => {expect(arrowFunction()).toEqual("run arrow function")});
+test("anotherArrowFunction", () => {expect(anotherArrowFunction("arg 1")).toEqual("run another arrow function with parameter value: arg 1")});
+*/
+// Once you have those working, uncomment this section and get the second
+// set of tests to run
 
 //don't change this
 //now mess things up!
@@ -43,9 +43,9 @@ arrowFunction = anotherArrowFunction;
 anotherArrowFunction = spare; 
 
 //fill in the correct string argument passed to toEquals()
-test("myFunction2", () => {expect(myFunction()).toEqual("")});
-test("firstFunction2", () => {expect(firstFunction()).toEqual("")});
-test("secondFunction2", () => {expect(secondFunction()).toEqual("")});
-test("arrowFunction2", () => {expect(arrowFunction()).toEqual("")});
-test("anotherArrowFunction2", () => {expect(anotherArrowFunction("arg 1")).toEqual("")});
-*/
+test("myFunction2", () => {expect(myFunction()).toEqual("run secondFunction")});
+test("firstFunction2", () => {expect(firstFunction()).toEqual("run myFunction")});
+test("secondFunction2", () => {expect(secondFunction()).toEqual("run arrow function")});
+test("arrowFunction2", () => {expect(arrowFunction()).toEqual("run another arrow function with parameter value: undefined")});
+test("anotherArrowFunction2", () => {expect(anotherArrowFunction("arg 1")).toEqual("run myFunction")});
+
