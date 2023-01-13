@@ -18,6 +18,16 @@
  * How do you separate the code for each sub-problem so that you can test
  * it individually?
  */
+function nameInitialiser (names) {
+  let initilas = [];
+  names.forEach(name => initilas.push(name.split(" ").map((n)=>n[0]).join("")))
+ 
+
+  return initilas.join(", ");
+}
+
+let names = ["Karla Grajales", "Karleen Richards", "Khadija Haji", "Gayle Ngozi", "James Bromley"];
+console.log(nameInitialiser(names));
 
 
 test("initialise name", () => {

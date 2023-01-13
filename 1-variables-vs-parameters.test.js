@@ -16,5 +16,5 @@ function petNames(dog, cat) {
 }
 
 test("are my pets well named?", () => {
-  expect(petNames(cat, dog)).toEqual("my dog is called Burt The Dog and my cat is called Alfred The Cat");
+  expect(petNames(dog, cat)).toEqual("my dog is called Burt The Dog and my cat is called Alfred The Cat");
 });
